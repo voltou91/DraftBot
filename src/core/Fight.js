@@ -673,9 +673,6 @@ class Fight {
     const loser = this.getLoser();
     if (loser !== null && !this.tournamentMode && !this.friendly) {
       this.points = Math.round(100 + 10 * loser.entity.Player.level * this.elo);
-      if (this.points > 2000) {
-        this.points = Math.round(2000 - randInt(5, 1000));
-      }
     } else {
       this.points = 0;
     }
