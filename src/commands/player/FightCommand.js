@@ -8,6 +8,11 @@ const Fight = require('../../core/Fight');
  * @param {boolean} friendly - If the fight is a friendly fight
  */
 const FightCommand = async function (language, message, args, friendly = false) {
+
+  //TOURNAMENT OVERRIDE
+  friendly = false;
+  args = [];
+
   let attacker;
   [attacker] = await Entities.getOrRegister(message.author.id);
 
