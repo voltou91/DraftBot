@@ -34,12 +34,12 @@
 		}
 	},
 	"activity": "🌍 - Draftbot.com !",
-	"startStatus": ":robot: **DraftBot** - v",
+	"startStatus": ":robot: **DraftBot** - Tournament mode - v",
 	"embed": {
 		"error": "#D92D43",
 		"default": ""
 	},
-	"reboot": "DraftBot",
+	"reboot": "DraftBot - Tournament",
 	"br": "############################################\n",
 	"dm": {
 		"supportAlert": ":love_letter: | **Nouveau message privé reçu !** \n`Auteur: {username} (id : {id})`\n\n>>> ",
