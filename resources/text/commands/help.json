@@ -28,12 +28,6 @@
 					"category": "util",
 					"description": "Permet de savoir si le bot est en ligne.\n\n(Note : Le temps affiché est le temps de réponse du bot et non pas votre ping: un temps de réponse correct sera inférieur à 500ms. :clock1:"
 				},
-				"respawn": {
-					"emote": ":angel:",
-					"usage": "respawn",
-					"category": "player",
-					"description": "Permet de recommencer à jouer après avoir été mis K.O."
-				},
 				"profile": {
 					"emote": ":bust_in_silhouette:",
 					"usage": "profile",
@@ -51,12 +45,6 @@
 					"usage": "fight",
 					"category": "player",
 					"description": "Utilisez cette commande pour défier les autres joueurs qui se trouvent sur le même serveur que vous.\nLes combats se déroulent tour par tour. À chaque tour, vous pouvez choisir une action à effectuer.\n\nVoici la liste des actions:\n- :crossed_swords: **Attaque simple**: Une attaque moyenne qui a des chances moyennes de réussir.\n- :dagger: **Attaque rapide**: Une attaque qui marche bien si vous êtes plus rapide que votre adversaire.\n- :axe: **Attaque puissante**: Une attaque avec peu de réussite mais qui fait beaucoup de dégâts.\n- :bomb: **Attaque ultime**: Une attaque sur 2 tours, qui est efficace si vous avez perdu de la vie. Elle enlève 2/3 de la vie de votre adversaire.\n- :shield: **Défense**: Augmente la défense. La défense permet de prendre moins de dégâts des attaques. Plus l'action est utilisée, moins elle est efficace.\n- :rocket: **Vitesse**: Augmente la vitesse. Si votre vitesse est supérieure à celle de votre adversaire, vous avez plus de chance de réussir votre attaque sauf pour l'attaque ultime. Plus l'action est utilisée, moins elle est efficace.\n\nLe combat s'arrête quand un joueur n'a plus de vie, ne répond pas au bout de 30 secondes ou que le tour 25 est atteint. Quand un combat se finit, vous allez probablement perdre de l'énergie. Elle se régénèrent avec le temps.\nPour plus d'informations vous pouvez aller voir la page du guide : https://guide.draftbot.com/notions-principale/combats"
-				},
-				"friendlyfight": {
-					"emote": ":crossed_swords:",
-					"usage": "friendlyfight",
-					"category": "player",
-					"description": "Cette commande permet de lancer un combat amical.\n\nDans un combat amical, vous avez votre vie de combat maximale, vous ne perdez pas de points et vous n'utilisez pas votre potion.\n\nPour plus d'informations à propos des combats, utilisez `help fight`."
 				},
 				"help": {
 					"emote": ":notebook_with_decorative_cover:",
@@ -76,18 +64,6 @@
 					"category": "player",
 					"description": "Affiche le classement général du jeu par tranche de 15 joueurs. Les joueurs dans le même serveur que vous sont marqués par une pastille bleue."
 				},
-				"topweek": {
-					"emote": ":trophy:",
-					"usage": "topweek [numéro de page]",
-					"category": "player",
-					"description": "Affiche le classement général de la semaine du jeu par tranche de 15 joueurs. Les joueurs dans le même serveur que vous sont marqués par une pastille bleue."
-				},
-				"topserver": {
-					"emote": ":trophy:",
-					"usage": "topserver [numéro de page]",
-					"category": "player",
-					"description": "Affiche le classement du serveur par tranche de 15 joueurs."
-				},
 				"inventory": {
 					"emote": ":school_satchel:",
 					"usage": "inventory",
@@ -99,18 +75,6 @@
 					"usage": "report",
 					"category": "player",
 					"description": "Permet de collecter les informations et les ressources collectées par votre personnage durant votre absence. De temps en temps, des évenements se déclenchent et demandent des actions particulières."
-				},
-				"sell": {
-					"emote": ":moneybag:",
-					"usage": "sell",
-					"category": "player",
-					"description": "Permet de vendre l'objet qui se trouve dans votre réserve, la valeur de l'objet est determinée en fonction de sa puissance et peut être égale à 0 si l'objet est pas tip top :wink:."
-				},
-				"daily": {
-					"emote": ":calendar:",
-					"usage": "daily",
-					"category": "player",
-					"description": "Certains items vous donnent un bonus journalier ou mensuel. Utilisez cette commande pour récupérer ces bonus. Pour savoir si un item vous donne un bonus journalier, effectuez la commande `inventory`."
 				},
 				"invite": {
 					"emote": ":inbox_tray:",
