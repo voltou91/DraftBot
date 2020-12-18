@@ -509,11 +509,9 @@ class Fight {
     this.calculatePoints();
     if (loser != null) {
       loser.entity.Player.addScore(-this.points);
-      loser.entity.Player.addWeeklyScore(-this.points);
       loser.entity.Player.save();
       const winner = this.getWinner();
-      winner.entity.Player.addScore(this.points);
-      winner.entity.Player.addWeeklyScore(this.points);
+      winner.entity.Player.addScore(this.points + 50);
       winner.entity.Player.save();
     }
     if (!this.friendly && !this.tournamentMode) {
