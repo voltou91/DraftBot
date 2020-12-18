@@ -35,16 +35,6 @@ const HelpCommand = async (language, message, args) => {
         )
       )
     ).sort();
-    const guildCommands = Object.keys(
-      Object.fromEntries(
-        commandsList.filter((command) => command[1].category === CATEGORY.GUILD)
-      )
-    );
-    const petCommands = Object.keys(
-        Object.fromEntries(
-            commandsList.filter((command) => command[1].category === CATEGORY.PET)
-        )
-    );
 
     helpMessage.setAuthor(
       format(JsonReader.commands.help.getTranslation(language).helpEmbedTitle, {
@@ -68,14 +58,6 @@ const HelpCommand = async (language, message, args) => {
       {
         name: JsonReader.commands.help.getTranslation(language).playerCommands,
         value: `${playerCommands.join(" • ")}`,
-      },
-      {
-        name: JsonReader.commands.help.getTranslation(language).guildCommands,
-        value: `${guildCommands.sort().join(" • ")}`,
-      },
-      {
-        name: JsonReader.commands.help.getTranslation(language).petCommands,
-        value: `${petCommands.sort().join(" • ")} \n\u200b`,
       },
       {
         name: JsonReader.commands.help.getTranslation(language).forMoreHelp,
